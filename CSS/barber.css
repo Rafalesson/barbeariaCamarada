@@ -24,14 +24,15 @@ body{
 }
 
 .titulo{
-    padding: 15px;
+    padding-left: 30px;
     text-align: center;
     color: rgb(255, 215, 130);
-    font-size: 22px;
+    font-size: 25px;
 }
 
 #h1{
-    color: rgb(255, 215, 130);
+    width: 15%;
+    
 }
 
 header .menu{
@@ -55,7 +56,7 @@ header .menu a{
 }
 
 header ul{
-    margin-right: 30px;
+    margin-right: 50px;
 }
 
 header .menu .ativo, header .menu ul a:hover{
