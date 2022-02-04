@@ -57,7 +57,8 @@ header a{
 }
 
 .produtos{
-    width: 75vw;
+    width: auto;
+    height: auto;
     margin: 0 auto;
 }
 
