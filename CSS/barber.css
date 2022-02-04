@@ -37,6 +37,7 @@ body{
 
 header .menu{
     position: fixed;
+    top: 0;
     width: 100%;
     display: flex;
     align-items: center;
@@ -74,6 +75,10 @@ em strong{
     font-size: large;
 }
 #banner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, .8)),  url('https://raw.githubusercontent.com/Rafalesson/barbeariaCamarada/main/IMG/banner-barber.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-top: 7%;
   margin-left: 20%;
   width: 60%; 
