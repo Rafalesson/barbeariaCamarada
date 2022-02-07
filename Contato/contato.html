@@ -45,24 +45,26 @@
     <main>
         <form action="">
             <fieldset>
+                <legend>Fomulário</legend>
                 <section>
-                    <legend>Fomulário</legend>
-
                     <label for="nome">Nome e Sobrenome:</label>
-                    <input type="text" id="nome" class="input-padrao">
+                    <input type="text" id="nome" class="input-padrao" placeholder="Rafael Alesson Couto da Silva"
+                        required>
 
                     <label for="email">E-mail:</label>
-                    <input type="email" name="email" id="email" class="input-padrao">
+                    <input type="email" name="email" id="email" class="input-padrao" placeholder="exemplo@exemplo.com"
+                        required>
 
                     <label for="fone">Telefone:</label>
-                    <input type="tel" name="fone" id="fone" class="input-padrao">
+                    <input type="tel" name="fone" id="fone" class="input-padrao" placeholder="(81) 98888-8888" required>
 
                     <label for="mensagem">Mensagem: </label>
-                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" class="input-padrao"></textarea>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" class="input-padrao"
+                        placeholder="Show me love here: "></textarea>
                 </section>
 
                 <section class="contato">
-                    <p>Como prefere nosso contato?</p>
+                    <span id="span1">Como prefere nosso contato?</span>
 
                     <label for="radio-email">
                         <input type="radio" name="contato" id="radio-email" value="E-mail">
@@ -77,13 +79,30 @@
 
 
                     <label for="radio-wpp">
-                        <input type="radio" name="contato" id="radio-wpp" value="WhatsApp">
+                        <input type="radio" name="contato" id="radio-wpp" value="WhatsApp" checked>
                         WhatsApp
                     </label>
 
+                    <section class="selecao">
+                        <span>Qual melhor horário para contato?</span>
+                        <select name="" id="">
+                            <option value="">
+                                Manhã
+                            </option>
+
+                            <option value="">
+                                Tarde
+                            </option>
+
+                            <option value="">
+                                Noite
+                            </option>
+                        </select>
+                    </section>
+                    <!--selecao-->
 
                     <label for="check">
-                        <input type="checkbox" name="" id="check">
+                        <input type="checkbox" name="" id="check" checked>
                         Gostaria de receber atualizações por e-mail?
                     </label>
 

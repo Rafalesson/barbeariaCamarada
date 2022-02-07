@@ -74,11 +74,20 @@ fieldset{
     padding: 20px;
     margin: 0 auto;
     border: 2px solid rgb(255, 215, 130);
+    box-shadow: 0px 0px 10px rgb(255, 215, 130);
     border-radius: 5px;
 }
 
 legend{
     text-align: center;
+    border: 2px solid rgb(255, 215, 130);
+    padding: 10px 25px;
+    border-radius: 15px;
+    background-color: rgb(255, 215, 130);
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px rgb(255, 215, 130);
 }
 
 form label{
@@ -86,7 +95,7 @@ form label{
     margin: 10px 15px 0 50px;
 }
 
-form p{
+.contato #span1{
     display: block;
     margin: 1vw 0 1.5vw 0;
     text-align: center;
@@ -116,6 +125,39 @@ form p{
     cursor: pointer;
 }
 
+.selecao{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 15px 0 50px;
+    justify-content: center;
+}
+
+.selecao select{
+    width: 10vw;
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    background-color: rgba(255, 215, 130, .2);
+    border-style: none;
+    border-radius: 15px;
+    color: rgb(255, 215, 130);
+    outline: none;
+    font-weight: bold;
+}
+
+.selecao select:hover{
+    background-color: rgb(255, 215, 130);
+    color: black;
+}
+
+.selecao option{
+    background-color: rgb(255, 215, 130);
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
 #check{
     margin: 20px 10px 20px 0;
 }
@@ -127,6 +169,8 @@ form p{
     border-radius: 15px;
     border-style: none;
     cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 #botao:hover{
