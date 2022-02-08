@@ -2,12 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    
 }
 
-body{
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 215, 130);
+header .menu{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color:  rgb(15, 15, 15);
 }
 
 .titulo{
@@ -16,19 +20,6 @@ body{
     text-align: center;
     color: rgb(255, 215, 130);
     font-size: 25px;
-}
-
-header{
-    position: relative;
-}
-
-header .menu{
-    position: fixed;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color:  rgb(15, 15, 15);
 }
 
 header .menu li{
@@ -50,26 +41,83 @@ header ul{
 header .menu .ativo, header .menu ul a:hover{
     color: rgb(0, 0, 0);
     background-color: rgb(255, 215, 130);
+    transition: 2s;
 }
 
 header a{
     text-decoration: none;
 }
 
+body{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 215, 130);
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+main{
+    width: 100vw;
+    height: 90vh;
+    
+}
+
 .produtos{
-    width: auto;
+    width: 100vw;
     height: auto;
     margin: 0 auto;
+    position: relative;
+}
+
+.descricao{
+    position: absolute;
+    bottom: 50px;
+}
+
+#d1{
+    left: 26%;
+}
+
+#d2{
+    left: 15%;
+}
+
+#d3{
+    left: 18%;
 }
 
 .bloco {
     display: inline-block;
     padding: 20px;
-    margin: 10% 1.5%;
+    margin: 5% 1.5%;
     text-align: center;
-    width: 30%;
+    width: 28vw;
+    height: 550px;
     border: 2px solid rgb(255, 215, 130);
     border-radius: 10px 40px 10px 40px;
+    position: relative;
+   
+}
+
+#b1{
+    background: url(https://raw.githubusercontent.com/Rafalesson/barbeariaCamarada/main/Produtos/IMG/cabelo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: initial;
+}
+
+#b2{
+    background: url(https://raw.githubusercontent.com/Rafalesson/barbeariaCamarada/main/Produtos/IMG/barba.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: initial;
+}
+
+#b3{
+    background: url(https://raw.githubusercontent.com/Rafalesson/barbeariaCamarada/main/Produtos/IMG/cabelo+barba.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: initial;
 }
 
 .produtos h2{
@@ -95,7 +143,5 @@ footer{
     width: 100%;
     height: 5vh;
     color: rgb(255, 215, 130);
-    background-color: rgb(15, 15, 15);
-    position: relative;
-    bottom: 0px;
+    background-color: rgb(0, 0, 0);
 }
