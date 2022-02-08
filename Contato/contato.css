@@ -65,8 +65,12 @@ header a{
 main{
     width: auto;
     margin: 0 auto;
+<<<<<<< HEAD
     height: auto;
     
+=======
+    height: 100%;
+>>>>>>> 64413255625b7b923a1071a4393d154dfbbb7201
 }
 
 form{
@@ -78,7 +82,11 @@ form{
 }
 
 fieldset{
+<<<<<<< HEAD
     width: auto;
+=======
+    width: 60%;
+>>>>>>> 64413255625b7b923a1071a4393d154dfbbb7201
     height: auto;
     padding: 20px;
     margin: 0 auto;
