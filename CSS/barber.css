@@ -6,33 +6,8 @@
 body{
     background-color: rgb(0, 0, 0);
     color: seashell;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 80px;
-}
-
-.box p{
-    padding: 15px;
-    width: 60%;
-    font-size: 17px;
-}
-
-.titulo{
-    padding-left: 30px;
-    text-align: center;
-    color: rgb(255, 215, 130);
-    font-size: 25px;
-}
-
-#h1{
-    width: 15%;
-    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
 }
 
 header .menu{
@@ -50,7 +25,7 @@ header .menu li{
 }
 
 header .menu a{
-    color: rgb(255, 215, 130);
+    color: rgba(255, 215, 130, .5);
     padding: 10px 15px;
     border-radius: 3px;
     transition: 200ms;
@@ -60,21 +35,74 @@ header ul{
     margin-right: 50px;
 }
 
-header .menu .ativo, header .menu ul a:hover{
+header .menu .ativo{
+    background-color: rgba(255, 215, 130, .5);
+    color: black;
+}
+
+header .menu ul a:hover{
     color: rgb(0, 0, 0);
     background-color: rgb(255, 215, 130);
-    transition: 2s;
+    transition: 1s;
 }
 
 header a{
     text-decoration: none;
 }
 
-
-em strong{
-    color: rgb(255, 215, 130);
-    font-size: large;
+.box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1em 0 1em 0;
+    
 }
+
+.box p{
+    padding: 1em;
+    width: 60%;
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+.titulo{
+    padding-left: 1em;
+    text-align: center;
+    color: rgb(255, 215, 130);
+    font-size: 1.8em;
+}
+
+#h1{
+    width: 15%;
+    font-size: 1.5em;
+    color: rgba(255, 215, 130, .5);
+}
+
+#h1:hover{
+    color: rgb(255, 215, 130);
+    transition: 1s;
+}
+
+#utens{
+    float: left;
+    margin: -2em 1.5em 0 0; 
+}
+
+#utens:hover{
+    transform: rotate(3600deg);
+    transition: 3s;
+}
+
+strong{
+    color: rgb(255, 215, 130, .5);
+}
+
+strong:hover{
+    color: rgb(255, 215, 130);
+    transition: 1s;
+}
+
 #banner{
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, .8)),  url('https://raw.githubusercontent.com/Rafalesson/barbeariaCamarada/main/IMG/banner-barber.jpg');
   background-position: center;
@@ -84,48 +112,100 @@ em strong{
   margin-left: 20%;
   width: 60%; 
   height: 25vw;
-  box-shadow: 2px 2px 4px 1px rgba(255, 215, 130);
-  margin-bottom: 20px;
+  box-shadow: 2px 2px 4px 1px rgba(255, 215, 130, .5);
+  margin-bottom: 1em;
   border-radius: 10px;
  
 }
 
-.box2{  
-    background-color: rgba(255, 215, 130, .9);
-    width: 100%;
-    height: 35vw;
+.mapa{
+    width: 60%;
+    padding: 3em 0;
     margin: 0 auto;
-    padding: 15px;
 }
 
-#h3{
-    color:rgb(15, 15, 15);
-    padding: 30px;
+.mapa p{
+    margin: 2em 0 2em 0;
+    text-align: center;
+}
+
+.map{
+    border-radius: 1em;
+}
+
+.box2{  
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 215, 130, .9);
+    width: 100%;
+    height: 80vh;
+    margin: 0 auto;
+    padding: 3em 0;
+    clear: left; /*limpando o flot*/
+}
+
+.h3{
+    padding: 1em;
+    background-color: rgb(255, 215, 130);
+    border-bottom: .1em solid rgba(0, 0, 0, 0.35);
+}
+
+.h3 h3{
+    color: black;
 }
 
 .box2 ul{
-    display: inline-block;
-    vertical-align: top;
-    margin: 3% 15% 0 15%;
-    padding: 15px;
-    width: 20%;
+    padding: 1em;
+    width: 25%;
+    height: 55%;
+    margin: 2em auto 0 auto;
     background-color: rgb(255, 215, 130);
-    border-radius: 30px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+    box-shadow: 2px 2px 5px 1px rgb(0, 0, 0);
+}
+
+.box2 ul:hover{
+    transform: scale(1.2);
+    transition: 1s;
 }
 
 .itens{
+    font-size: 1em;
     list-style: none;
-    padding: 5px;
+    padding: .25em;
     color: rgb(15, 15, 15);    
 }
 
+.itens:nth-child(2n){
+    background-color: rgba(0, 0, 0, .9);
+    color: rgb(255, 215, 130);   
+} 
+/* pseud0-elemento. nesse caso, estou selecionando o segundo elemento da classe .itens e aplicando a mesma modificação para todos os elementos pares da classe*/
+
+.video{
+    width: 30%;
+    height: 55%;
+    margin: 2em auto 0 auto;
+    border-radius: 1em;
+}
+
+.video:hover{
+transform: scale(1.5);
+transition: 1s;
+}
+
 #foto2{
-    border: 5px solid rgb(255, 215, 130);
-    border-radius: 30px;
-    width: 40%;
-    height: 50vh;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    margin: 2em auto 0 auto;
+    border-radius: 1em;
+    width: 25%;
+    height: 60%;
+    box-shadow: 2px 2px 5px 1px rgb(0, 0, 0);
+}
+
+#foto2:hover{
+    transform: scale(1.2);
+    transition: 1s;
 }
 
 footer{
