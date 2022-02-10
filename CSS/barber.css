@@ -12,6 +12,25 @@ body{
     font-weight: 500;
 }
 
+.menu-mobile{
+    display: none;
+    cursor: pointer;
+}
+
+.menu-mobile div{
+    width: 32px;
+    height: 2px;
+    background: rgb(255, 215, 130);
+    margin: 8px;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
 header .menu{
     width: 100%;
     display: flex;
@@ -31,16 +50,12 @@ header .menu a{
     transition: 200ms;
 }
 
-header ul{
-    margin-right: 50px;
-}
-
-header .menu .ativo{
+.menu .ativo{
     background-color: rgba(255, 215, 130, .5);
     color: black;
 }
 
-header .menu ul a:hover{
+.menu ul a:hover{
     color: rgb(0, 0, 0);
     background-color: rgb(255, 215, 130);
     transition: 1s;
@@ -62,7 +77,7 @@ header a{
 
 .box p{
     padding: 1em;
-    width: 60%;
+    width: 75%;
     font-size: 1.1em;
     text-align: justify;
 }
@@ -150,7 +165,8 @@ strong:hover{
 
 .box2{  
     background: linear-gradient(rgb(255, 215, 130), black); 
-    width: 100%;    
+    width: 100%; 
+    height: 100vh;   
 }
 
 #h3{
@@ -238,7 +254,7 @@ footer{
     background-color: rgb(0, 0, 0);
 }
 
-@media screen and (max-width: 480px){
+@media (max-width: 858px){
     .box{
         width: 100%;
     }
@@ -246,6 +262,11 @@ footer{
     .titulo{
         width: 100%;
         font-size: 1.5em;
+    }
+
+    #h1{
+        font-size: 1.2em;
+        top: 1em;
     }
 
     #banner{
@@ -261,7 +282,7 @@ footer{
 
     .mapa{
         width: 100%;
-        height: 100vh;
+        height: 65vh;
     }
 
     .map{
@@ -299,9 +320,16 @@ footer{
         flex-direction: column;
     }
 
-    .conteudo ul, #foto2, .video{
-        width: 80%;
+    .conteudo ul, #foto2{
+        width: 70%;
         margin: 2em auto;
+        height: auto;
+    }
+
+    .video{
+        width: 70%;
+        margin: 2em auto;
+        height: 30vh;
     }
 
     footer{
